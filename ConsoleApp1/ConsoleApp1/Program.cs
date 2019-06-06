@@ -10,8 +10,26 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("teste de qualquer merda");
+            Console.WriteLine("ola, qual e seu nome?");
+            var nome = Console.ReadLine();
+            while (!nome.Contains("sair"))
+            {
+                if (string.IsNullOrEmpty(nome))
+                {
+                    Console.WriteLine($"digite um nome por favor");
+
+                }
+                else
+                {
+                    Console.WriteLine($"seja bem vindo {nome}");
+   
+                }
+                nome = Console.ReadLine();
+
+            }
             Console.ReadLine();
+
+
         }
     }
 }
