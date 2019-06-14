@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calculadora", "calculadora\calculadora.csproj", "{0324E876-49B1-4B31-B4FA-294FF3F8B37B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "media", "media\media.csproj", "{5F42D99F-DB42-47A6-9390-B98B5C6CA634}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0324E876-49B1-4B31-B4FA-294FF3F8B37B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0324E876-49B1-4B31-B4FA-294FF3F8B37B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0324E876-49B1-4B31-B4FA-294FF3F8B37B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F42D99F-DB42-47A6-9390-B98B5C6CA634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F42D99F-DB42-47A6-9390-B98B5C6CA634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F42D99F-DB42-47A6-9390-B98B5C6CA634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F42D99F-DB42-47A6-9390-B98B5C6CA634}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

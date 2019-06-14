@@ -13,7 +13,7 @@ namespace calculadora
             while (true)
             {
                 string temp = lerEscrever("entre com a formula:");
-                string[]dados = temp.Split('+', '-', '/', '*');
+                string[]dados = temp.Split('+', '-' ,'/', '*');
                
                 if (dados.Count() > 1)
                 {
