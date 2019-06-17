@@ -1,0 +1,7 @@
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\media 2\bin\Debug\media 2.exe.config
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\media 2\bin\Debug\media 2.exe
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\media 2\bin\Debug\media 2.pdb
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\media 2\obj\Debug\media 2.csprojAssemblyReference.cache
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\media 2\obj\Debug\media 2.csproj.CoreCompileInputs.cache
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\media 2\obj\Debug\media 2.exe
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\media 2\obj\Debug\media 2.pdb

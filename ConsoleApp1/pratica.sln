@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calculadora", "calculadora\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "media", "media\media.csproj", "{5F42D99F-DB42-47A6-9390-B98B5C6CA634}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "media 2", "media 2\media 2.csproj", "{DBEF5ABD-490B-43C0-B2FC-FE838F11CDE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5F42D99F-DB42-47A6-9390-B98B5C6CA634}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F42D99F-DB42-47A6-9390-B98B5C6CA634}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F42D99F-DB42-47A6-9390-B98B5C6CA634}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBEF5ABD-490B-43C0-B2FC-FE838F11CDE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBEF5ABD-490B-43C0-B2FC-FE838F11CDE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBEF5ABD-490B-43C0-B2FC-FE838F11CDE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBEF5ABD-490B-43C0-B2FC-FE838F11CDE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
