@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "media", "media\media.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "media 2", "media 2\media 2.csproj", "{DBEF5ABD-490B-43C0-B2FC-FE838F11CDE6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pessoas", "pessoas\pessoas.csproj", "{4EA6B4DC-E894-4FDA-B15B-097A3A81909D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{DBEF5ABD-490B-43C0-B2FC-FE838F11CDE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBEF5ABD-490B-43C0-B2FC-FE838F11CDE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBEF5ABD-490B-43C0-B2FC-FE838F11CDE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EA6B4DC-E894-4FDA-B15B-097A3A81909D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EA6B4DC-E894-4FDA-B15B-097A3A81909D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EA6B4DC-E894-4FDA-B15B-097A3A81909D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EA6B4DC-E894-4FDA-B15B-097A3A81909D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

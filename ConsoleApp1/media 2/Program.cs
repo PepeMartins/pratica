@@ -14,7 +14,7 @@ namespace media_2
             {
                 //Função que lê as notas colocadas
                 string nota_a = lerEscrever("entre com a nota A");
-                string nota_b = lerEscrever("entre com a nota B");
+                String nota_b = lerEscrever("entre com a nota B");
                 string nota_c = lerEscrever("entre com a nota C");
                 string nota_d = lerEscrever("entre com a nota D");
 
@@ -34,5 +34,4 @@ namespace media_2
             return Console.ReadLine();
         }
     }
-
 }

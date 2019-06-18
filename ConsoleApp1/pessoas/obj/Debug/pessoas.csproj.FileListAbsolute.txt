@@ -1,0 +1,7 @@
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\pessoas\bin\Debug\pessoas.exe.config
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\pessoas\bin\Debug\pessoas.exe
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\pessoas\bin\Debug\pessoas.pdb
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\pessoas\obj\Debug\pessoas.csprojAssemblyReference.cache
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\pessoas\obj\Debug\pessoas.csproj.CoreCompileInputs.cache
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\pessoas\obj\Debug\pessoas.exe
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\pessoas\obj\Debug\pessoas.pdb
