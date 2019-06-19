@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "media 2", "media 2\media 2.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pessoas", "pessoas\pessoas.csproj", "{4EA6B4DC-E894-4FDA-B15B-097A3A81909D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{558FAA6E-C9A6-4BE4-9344-C8842D8D7027}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{4EA6B4DC-E894-4FDA-B15B-097A3A81909D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EA6B4DC-E894-4FDA-B15B-097A3A81909D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EA6B4DC-E894-4FDA-B15B-097A3A81909D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{558FAA6E-C9A6-4BE4-9344-C8842D8D7027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{558FAA6E-C9A6-4BE4-9344-C8842D8D7027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{558FAA6E-C9A6-4BE4-9344-C8842D8D7027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{558FAA6E-C9A6-4BE4-9344-C8842D8D7027}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

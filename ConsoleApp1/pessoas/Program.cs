@@ -21,9 +21,9 @@ namespace pessoas
                 });
             }
 
-            foreach(var item in Lista)
+            foreach(var pessoa in Lista)
             {
-                Console.WriteLine($"Olá me chamo {item.Nome}, tenho {item.Idade} de idade");
+                pessoa.Falar($"Olá me chamo {pessoa.Nome}, tenho {pessoa.Idade} de idade");  
 
             }
 
