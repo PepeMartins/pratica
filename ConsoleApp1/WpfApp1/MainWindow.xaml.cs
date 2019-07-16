@@ -38,7 +38,7 @@ namespace WpfApp1
             status.Content = arquivo;
         }
 
-       
+
 
         private void Add_button_Click(object sender, RoutedEventArgs e)
         {
@@ -68,7 +68,7 @@ namespace WpfApp1
 
         private void Item_textbox_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.Key == Key.Enter)
+            if (e.Key == Key.Enter)
             {
                 Add_button_Click(null, null);
             }
@@ -83,21 +83,42 @@ namespace WpfApp1
                 Lista = new ObservableCollection<string>(lista_arquivo);
                 this.listbox.ItemsSource = this.Lista;
                 arquivo = file.FileName;
-                status.Content = arquivo;  
+                status.Content = arquivo;
 
             }
         }
 
         private void Menu_salvar_Click(object sender, RoutedEventArgs e)
         {
-            SaveFileDialog file = new SaveFileDialog();    
-            if(file.ShowDialog() == true)
+            SaveFileDialog file = new SaveFileDialog();
+            if (file.ShowDialog() == true)
             {
                 File.AppendAllLines(file.FileName, Lista.ToList());
                 arquivo = file.FileName;
                 status.Content = arquivo;
 
             }
+        }
+
+        private void Mudar_status_Click(object sender, RoutedEventArgs e)
+        {
+            if (listbox.SelectedItem == null) return;
+            var index = listbox.SelectedIndex;
+            var tarefa = listbox.SelectedItem.ToString();
+
+            if (tarefa.Contains("[Ok]"))
+                tarefa = tarefa.Replace("[Ok]", "");
+            else
+                tarefa = "[Ok]" + tarefa;
+
+
+            Lista[index] = tarefa;
+
+        }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
