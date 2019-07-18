@@ -25,6 +25,7 @@ namespace WpfApp1
         String arquivo = "lista.txt";
 
         public ObservableCollection<String> Lista = new ObservableCollection<string>();
+        public ObservableCollection<String> ListaPesquisa = new ObservableCollection<string>();
 
         public MainWindow()
         {
@@ -113,12 +114,36 @@ namespace WpfApp1
 
 
             Lista[index] = tarefa;
+            if (File.Exists(arquivo))
+            {
+                File.Delete(arquivo);
+            }
+            File.AppendAllLines(arquivo, Lista.ToList());
+        }
+
+        private void Mostrar_somente_prontos_Checked(object sender, RoutedEventArgs e)
+        {
+            var filtro = Lista.Where(tarefa => tarefa.Contains("[Ok]")==true).ToList();
+            ListaPesquisa = new ObservableCollection<string>(filtro);
+            listbox.ItemsSource = ListaPesquisa;
+        }
+        private void Mostrar_somente_prontos_Unchecked(object sender, RoutedEventArgs e)
+        {
+            listbox.ItemsSource = Lista;
+        }
+
+
+        private void Mostrar_somente_nao_prontas_Checked(object sender, RoutedEventArgs e)
+        {
+            var filtro = Lista.Where(tarefa => tarefa.Contains("[Ok]")!=true).ToList();
+            ListaPesquisa = new ObservableCollection<string>(filtro);
+            listbox.ItemsSource = ListaPesquisa;
 
         }
 
-        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        private void Mostrar_somente_nao_prontas_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            listbox.ItemsSource = Lista;
         }
     }
 }

@@ -22,7 +22,8 @@
             <Label x:Name="status" Content="Label"/>
         </StatusBar>
         <Button x:Name="mudar_status" Content="mudar status" Height="20" VerticalAlignment="Top" HorizontalAlignment="Center" Width="76" Margin="0,271,0,0" Click="Mudar_status_Click"/>
-        <CheckBox x:Name="Mostrar_somente_prontos" Content="Mostrar somente prontos" HorizontalAlignment="Left" Margin="576,190,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="Mostrar_somente_prontos" Content="Mostrar somente prontos" HorizontalAlignment="Left" Margin="576,190,0,0" VerticalAlignment="Top" Checked="Mostrar_somente_prontos_Checked" Unchecked="Mostrar_somente_prontos_Unchecked"/>
+        <CheckBox x:Name="Mostrar_somente_nao_prontas" Content="Mostrar somente não prontas" HorizontalAlignment="Left" Margin="576,212,0,0" VerticalAlignment="Top" Checked="Mostrar_somente_nao_prontas_Checked" Unchecked="Mostrar_somente_nao_prontas_Unchecked"/>
 
     </Grid>
 </Window>
