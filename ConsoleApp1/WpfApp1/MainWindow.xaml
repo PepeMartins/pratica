@@ -6,24 +6,41 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Label Content="lista" HorizontalAlignment="Center" Margin="0,29,0,0" VerticalAlignment="Top"/>
-        <ListBox x:Name="listbox" Height="100" Margin="60,68,60,0" VerticalAlignment="Top" KeyDown="Listbox_KeyDown"/>
-        <StackPanel HorizontalAlignment="Center" Margin="0,224,0,0" VerticalAlignment="Top" Orientation="Horizontal">
-            <TextBox x:Name="item_textbox" Height="23" TextWrapping="Wrap" Width="200"  KeyDown="Item_textbox_KeyDown"/>
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="90"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+
+        </Grid.RowDefinitions>
+        <Label Foreground="White" Content="lista" HorizontalAlignment="Center" Margin="0,29,0,0" VerticalAlignment="Top"/>
+        <ListBox Grid.RowSpan="3" Grid.Column="1" x:Name="listbox" Foreground="Black"  Margin="60,68,60,0" VerticalAlignment="Stretch" KeyDown="Listbox_KeyDown"/>
+        <StackPanel Grid.Column="1" Margin="0,10,60,0" HorizontalAlignment="Right" Grid.Row="3" VerticalAlignment="Top" Orientation="Horizontal">
+            <TextBox Foreground="White" x:Name="item_textbox" Height="23" TextWrapping="Wrap" Width="200"  KeyDown="Item_textbox_KeyDown"/>
             <Button x:Name="add_button" Content="adicionar" Click="Add_button_Click"/>
         </StackPanel>
-        <Menu Margin="0" VerticalAlignment="Top" Height="23">
-            <MenuItem x:Name="menu_abrir" Header="ABRIR" Click="Menu_abrir_Click"></MenuItem>
-            <MenuItem x:Name="menu_salvar" Header="SALVAR" Click="Menu_salvar_Click"></MenuItem>
+        <Menu Grid.RowSpan="6" Grid.Column="0" Margin="0,0,0,0" VerticalAlignment="Stretch" Background="#1A2630">
+            <MenuItem Foreground="White" Margin="10,80,0,0" FontWeight="Bold" x:Name="menu_abrir" Header="ABRIR" Click="Menu_abrir_Click"></MenuItem>
+            <MenuItem Foreground="White" Margin="10,8,0,0" FontWeight="Bold" x:Name="menu_salvar" Header="SALVAR" Click="Menu_salvar_Click"></MenuItem>
 
         </Menu>
-        <StatusBar Height="30" VerticalAlignment="Bottom">
+        <StatusBar Grid.Row="5" Grid.ColumnSpan="2" Height="30" VerticalAlignment="Bottom">
             <Label x:Name="status" Content="Label"/>
         </StatusBar>
-        <Button x:Name="mudar_status" Content="mudar status" Height="20" VerticalAlignment="Top" HorizontalAlignment="Center" Width="76" Margin="0,271,0,0" Click="Mudar_status_Click"/>
-        <CheckBox x:Name="Mostrar_somente_prontos" Content="Mostrar somente prontos" HorizontalAlignment="Left" Margin="576,190,0,0" VerticalAlignment="Top" Checked="Mostrar_somente_prontos_Checked" Unchecked="Mostrar_somente_prontos_Unchecked"/>
-        <CheckBox x:Name="Mostrar_somente_nao_prontas" Content="Mostrar somente não prontas" HorizontalAlignment="Left" Margin="576,212,0,0" VerticalAlignment="Top" Checked="Mostrar_somente_nao_prontas_Checked" Unchecked="Mostrar_somente_nao_prontas_Unchecked"/>
+        <Button Grid.Column="1" Grid.Row="3" x:Name="mudar_status" Content="mudar status" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="76" Margin="60,10,0,0" Click="Mudar_status_Click"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="1" Margin="55,50,0,0">
+            <CheckBox Grid.Column="1" x:Name="Mostrar_somente_prontos" Content="Mostrar somente prontos" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Checked="Mostrar_somente_prontos_Checked" Unchecked="Mostrar_somente_prontos_Unchecked"/>
+            <CheckBox Grid.Column="1" Margin="10,0,0,0" x:Name="Mostrar_somente_nao_prontas" Content="Mostrar somente não prontas" HorizontalAlignment="Left"  VerticalAlignment="Top" Checked="Mostrar_somente_nao_prontas_Checked" Unchecked="Mostrar_somente_nao_prontas_Unchecked"/>
 
+        </StackPanel>
+        
+ 
     </Grid>
 </Window>
