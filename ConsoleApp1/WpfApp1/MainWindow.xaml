@@ -1,11 +1,19 @@
-﻿<Window x:Class="WpfApp1.MainWindow"
+﻿<Controls:MetroWindow x:Class="WpfApp1.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         Title="MainWindow" Height="450" Width="800">
+    <Controls:MetroWindow.Resources>
+        <DataTemplate x:Key="menu">
+            <Grid Height="30">
+                <TextBlock VerticalAlignment="Center" FontSize="16" Foreground="White" Text="{Binding Label}"/>
+            </Grid>
+        </DataTemplate>
+    </Controls:MetroWindow.Resources>
     <Grid Background="White">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="90"></ColumnDefinition>
@@ -26,11 +34,11 @@
             <TextBox Foreground="White" x:Name="item_textbox" Height="23" TextWrapping="Wrap" Width="200"  KeyDown="Item_textbox_KeyDown"/>
             <Button x:Name="add_button" Content="adicionar" Click="Add_button_Click"/>
         </StackPanel>
-        <Menu Grid.RowSpan="6" Grid.Column="0" Margin="0,0,0,0" VerticalAlignment="Stretch" Background="#1A2630">
+        <!--<Menu Grid.RowSpan="6" Grid.Column="0" Margin="0,0,0,0" VerticalAlignment="Stretch" Background="#1A2630">
             <MenuItem Foreground="White" Margin="10,80,0,0" FontWeight="Bold" x:Name="menu_abrir" Header="ABRIR" Click="Menu_abrir_Click"></MenuItem>
             <MenuItem Foreground="White" Margin="10,8,0,0" FontWeight="Bold" x:Name="menu_salvar" Header="SALVAR" Click="Menu_salvar_Click"></MenuItem>
 
-        </Menu>
+        </Menu>-->
         <StatusBar Grid.Row="5" Grid.ColumnSpan="2" Height="30" VerticalAlignment="Bottom">
             <Label x:Name="status" Content="Label"/>
         </StatusBar>
@@ -40,7 +48,15 @@
             <CheckBox Grid.Column="1" Margin="10,0,0,0" x:Name="Mostrar_somente_nao_prontas" Content="Mostrar somente não prontas" HorizontalAlignment="Left"  VerticalAlignment="Top" Checked="Mostrar_somente_nao_prontas_Checked" Unchecked="Mostrar_somente_nao_prontas_Unchecked"/>
 
         </StackPanel>
-        
+        <Controls:HamburgerMenu Grid.RowSpan="6" OptionsItemTemplate="{StaticResource menu}"
+                                                 ItemTemplate="{StaticResource menu}">
+            <Controls:HamburgerMenu.ItemsSource>
+                <Controls:HamburgerMenuItemCollection>
+                <Controls:HamburgerMenuItem  x:Name="menu_abrir" Label="ABRIR"></Controls:HamburgerMenuItem>
+            <Controls:HamburgerMenuItem   x:Name="menu_salvar" Label="SALVAR" ></Controls:HamburgerMenuItem>
+                </Controls:HamburgerMenuItemCollection>
+            </Controls:HamburgerMenu.ItemsSource>
+        </Controls:HamburgerMenu>
  
     </Grid>
-</Window>
+</Controls:MetroWindow>

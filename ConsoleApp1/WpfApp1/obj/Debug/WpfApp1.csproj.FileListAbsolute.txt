@@ -13,3 +13,11 @@ C:\Users\rafael\source\repos\pratica\ConsoleApp1\WpfApp1\obj\Debug\WpfApp1.cspro
 C:\Users\rafael\source\repos\pratica\ConsoleApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
 C:\Users\rafael\source\repos\pratica\ConsoleApp1\WpfApp1\obj\Debug\WpfApp1.exe
 C:\Users\rafael\source\repos\pratica\ConsoleApp1\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\WpfApp1\bin\Debug\ControlzEx.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\WpfApp1\bin\Debug\MahApps.Metro.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\WpfApp1\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\WpfApp1\bin\Debug\ControlzEx.pdb
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\WpfApp1\bin\Debug\MahApps.Metro.pdb
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\WpfApp1\bin\Debug\MahApps.Metro.xml
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\WpfApp1\obj\Debug\App.baml
