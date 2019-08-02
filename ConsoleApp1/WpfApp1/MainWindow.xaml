@@ -6,17 +6,23 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                      xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
         Title="MainWindow" Height="450" Width="800">
     <Controls:MetroWindow.Resources>
         <DataTemplate x:Key="menu">
             <Grid Height="30">
-                <TextBlock VerticalAlignment="Center" FontSize="16" Foreground="White" Text="{Binding Label}"/>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="48" />
+                    <ColumnDefinition Width="100" />
+                </Grid.ColumnDefinitions>
+                <ContentControl Content="{Binding Icon}" Focusable="False" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                <TextBlock Grid.Column="1" VerticalAlignment="Center" FontSize="16" Foreground="White" Text="{Binding Label}"/>
             </Grid>
         </DataTemplate>
     </Controls:MetroWindow.Resources>
     <Grid Background="White">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="90"></ColumnDefinition>
+            <ColumnDefinition Width="150"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -52,8 +58,9 @@
                                                  ItemTemplate="{StaticResource menu}">
             <Controls:HamburgerMenu.ItemsSource>
                 <Controls:HamburgerMenuItemCollection>
-                <Controls:HamburgerMenuItem  x:Name="menu_abrir" Label="ABRIR"></Controls:HamburgerMenuItem>
-            <Controls:HamburgerMenuItem   x:Name="menu_salvar" Label="SALVAR" ></Controls:HamburgerMenuItem>
+                <Controls:HamburgerMenuIconItem Icon="{iconPacks:Material Kind=FolderOpen}"  x:Name="menu_abrir" Label="ABRIR"></Controls:HamburgerMenuIconItem>
+                    <Controls:HamburgerMenuIconItem Icon="{iconPacks:Material Kind=ContentSave}"  x:Name="menu_salvar" Label="SALVAR"></Controls:HamburgerMenuIconItem>
+
                 </Controls:HamburgerMenuItemCollection>
             </Controls:HamburgerMenu.ItemsSource>
         </Controls:HamburgerMenu>
