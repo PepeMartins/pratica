@@ -146,6 +146,11 @@ namespace WpfApp1
         {
             listbox.ItemsSource = Lista;
         }
+
+        private void Item_textbox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
 
