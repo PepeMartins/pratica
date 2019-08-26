@@ -101,6 +101,17 @@ namespace WpfApp1
 
             }
         }
+        private void teste_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog file = new SaveFileDialog();
+            if (file.ShowDialog() == true)
+            {
+                File.AppendAllLines(file.FileName, Lista.ToList());
+                arquivo = file.FileName;
+                status.Content = arquivo;
+
+            }
+        }
 
         private void Mudar_status_Click(object sender, RoutedEventArgs e)
         {

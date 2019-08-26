@@ -49,8 +49,8 @@
             <Label x:Name="status" Content="Label"/>
         </StatusBar>
         <Button Grid.Column="1" Grid.Row="3" x:Name="mudar_status" Content="mudar status" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="90" Margin="60,10,0,0" Click="Mudar_status_Click"/>
-        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="1" Margin="55,50,0,0">
-            <CheckBox Grid.Column="1" x:Name="Mostrar_somente_prontos" Content="Mostrar somente prontos" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Checked="Mostrar_somente_prontos_Checked" Unchecked="Mostrar_somente_prontos_Unchecked"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="1" Margin="55,40,0,0">
+            <CheckBox Grid.Column="1" x:Name="Mostrar_somente_prontos" Content="Mostrar somente prontos" HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Top" Checked="Mostrar_somente_prontos_Checked" Unchecked="Mostrar_somente_prontos_Unchecked"/>
             <CheckBox Grid.Column="1" Margin="10,0,0,0" x:Name="Mostrar_somente_nao_prontas" Content="Mostrar somente não prontas" HorizontalAlignment="Left"  VerticalAlignment="Top" Checked="Mostrar_somente_nao_prontas_Checked" Unchecked="Mostrar_somente_nao_prontas_Unchecked"/>
 
         </StackPanel>
@@ -60,6 +60,7 @@
                 <Controls:HamburgerMenuItemCollection>
                 <Controls:HamburgerMenuIconItem Icon="{iconPacks:Material Kind=FolderOpen}"  x:Name="menu_abrir" Label="ABRIR"></Controls:HamburgerMenuIconItem>
                     <Controls:HamburgerMenuIconItem Icon="{iconPacks:Material Kind=ContentSave}"  x:Name="menu_salvar" Label="SALVAR"></Controls:HamburgerMenuIconItem>
+                    <Controls:HamburgerMenuIconItem Icon="{iconPacks:Material Kind=CommentQuestion}"  x:Name="teste" Label="SOBRE"></Controls:HamburgerMenuIconItem>
 
                 </Controls:HamburgerMenuItemCollection>
             </Controls:HamburgerMenu.ItemsSource>

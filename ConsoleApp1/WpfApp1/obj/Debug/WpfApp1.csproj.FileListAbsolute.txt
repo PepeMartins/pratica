@@ -24,3 +24,5 @@ C:\Users\rafael\source\repos\pratica\ConsoleApp1\WpfApp1\obj\Debug\App.baml
 C:\Users\rafael\source\repos\pratica\ConsoleApp1\WpfApp1\bin\Debug\MahApps.Metro.IconPacks.Material.dll
 C:\Users\rafael\source\repos\pratica\ConsoleApp1\WpfApp1\bin\Debug\MahApps.Metro.IconPacks.Material.pdb
 C:\Users\rafael\source\repos\pratica\ConsoleApp1\WpfApp1\bin\Debug\MahApps.Metro.IconPacks.Material.xml
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\WpfApp1\obj\Debug\Sobre.g.cs
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\WpfApp1\obj\Debug\Sobre.baml
