@@ -1,0 +1,21 @@
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\tutorial mvc.exe.config
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\tutorial mvc.exe
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\tutorial mvc.pdb
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\DevExpress.Mvvm.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\DevExpress.Mvvm.UI.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\DevExpress.Mvvm.pdb
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\DevExpress.Mvvm.UI.pdb
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\obj\Debug\tutorial mvc.csprojAssemblyReference.cache
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\obj\Debug\MainWindow.g.cs
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\obj\Debug\App.g.cs
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\obj\Debug\tutorial mvc_MarkupCompile.cache
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\obj\Debug\tutorial mvc_MarkupCompile.lref
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\obj\Debug\MainWindow.baml
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\obj\Debug\tutorial mvc.g.resources
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\obj\Debug\tutorial_mvc.Properties.Resources.resources
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\obj\Debug\tutorial mvc.csproj.GenerateResource.cache
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\obj\Debug\tutorial mvc.csproj.CoreCompileInputs.cache
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\obj\Debug\tutorial mvc.csproj.CopyComplete
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\obj\Debug\tutorial mvc.exe
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\obj\Debug\tutorial mvc.pdb
