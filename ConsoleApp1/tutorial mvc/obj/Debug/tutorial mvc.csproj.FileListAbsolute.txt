@@ -19,3 +19,37 @@ C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\obj\Debug\tutorial
 C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\obj\Debug\tutorial mvc.csproj.CopyComplete
 C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\obj\Debug\tutorial mvc.exe
 C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\obj\Debug\tutorial mvc.pdb
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\DevExpress.Data.v18.2.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\DevExpress.Xpf.Core.v18.2.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\DevExpress.Xpf.Gauges.v18.2.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\DevExpress.Mvvm.v18.2.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\DevExpress.Printing.v18.2.Core.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\DevExpress.Images.v18.2.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\DevExpress.Pdf.v18.2.Core.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\DevExpress.Data.v18.2.xml
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\DevExpress.Xpf.Core.v18.2.xml
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\DevExpress.Xpf.Gauges.v18.2.xml
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\DevExpress.Mvvm.v18.2.xml
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\DevExpress.Printing.v18.2.Core.xml
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\DevExpress.Pdf.v18.2.Core.xml
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\de\DevExpress.Data.v18.2.resources.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\es\DevExpress.Data.v18.2.resources.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\ja\DevExpress.Data.v18.2.resources.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\ru\DevExpress.Data.v18.2.resources.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\de\DevExpress.Xpf.Core.v18.2.resources.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\es\DevExpress.Xpf.Core.v18.2.resources.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\ja\DevExpress.Xpf.Core.v18.2.resources.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\ru\DevExpress.Xpf.Core.v18.2.resources.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\de\DevExpress.Xpf.Gauges.v18.2.resources.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\es\DevExpress.Xpf.Gauges.v18.2.resources.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\ja\DevExpress.Xpf.Gauges.v18.2.resources.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\ru\DevExpress.Xpf.Gauges.v18.2.resources.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\de\DevExpress.Printing.v18.2.Core.resources.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\es\DevExpress.Printing.v18.2.Core.resources.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\ja\DevExpress.Printing.v18.2.Core.resources.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\ru\DevExpress.Printing.v18.2.Core.resources.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\de\DevExpress.Pdf.v18.2.Core.resources.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\es\DevExpress.Pdf.v18.2.Core.resources.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\ja\DevExpress.Pdf.v18.2.Core.resources.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\bin\Debug\ru\DevExpress.Pdf.v18.2.Core.resources.dll
+C:\Users\rafael\source\repos\pratica\ConsoleApp1\tutorial mvc\obj\Debug\tutorial mvc.exe.licenses
