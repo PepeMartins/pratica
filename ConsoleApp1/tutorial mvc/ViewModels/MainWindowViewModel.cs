@@ -14,6 +14,13 @@ namespace tutorial_mvc.ViewModels
             get { return GetValue<int>(nameof(Volume1)); }
             set { SetValue(value, nameof(Volume1)); }
         }
+
+        public string Source1
+        {
+            get { return GetValue<string>(nameof(Source1)); }
+            set { SetValue(value, nameof(Source1)); }
+        }
+
         public int Volume2
         {
             get { return GetValue<int>(nameof(Volume2)); }
@@ -29,5 +36,12 @@ namespace tutorial_mvc.ViewModels
             get { return GetValue<int>(nameof(Volume4)); }
             set { SetValue(value, nameof(Volume4)); }
         }
+
+        public MainWindowViewModel()
+        {
+            Volume1 = 50;
+            Source1 = @"C:\Pp\Internet Money\nick mira\Nick Mira Bodega Drum Kit\Snares & Claps\NM - Blocc (Clap).wav";
+        }
+
     }
 }

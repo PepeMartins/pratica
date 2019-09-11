@@ -12,26 +12,16 @@
     </Window.DataContext>
     <Grid Background="Black" >
         <StackPanel Orientation="Horizontal">
-            <StackPanel Margin="20,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Orientation="Horizontal" >
+            <MediaElement Volume="{Binding Volume1}" Source="{Binding Source1}"></MediaElement>
+            <StackPanel Background="#33808080" VerticalAlignment="Bottom">
+                <Button Content="Play"></Button>
+                <Button Content="" Width="20" Height="200" Background="#7F527A4A"></Button>
+                <StackPanel Margin="20,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Orientation="Horizontal" >
                 <ProgressBar Margin="0,0,0,0" Minimum="0" Orientation="Vertical" Maximum="100" Value="{Binding Volume1}" Height="100" Width="4"/>
                 <Slider Opacity="0.5" Width="20" Margin="-11,4,0,0" Height="100" Value="{Binding Volume1}" Minimum="0" Maximum="100" Orientation="Vertical"  />
                 <TextBlock Text="{Binding Volume1}" Opacity="{Binding Volume1}" Foreground="White" />
             </StackPanel>
-            <StackPanel Margin="20,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Orientation="Horizontal" >
-                <ProgressBar Margin="0,0,0,0" Minimum="0" Orientation="Vertical" Maximum="100" Value="{Binding Volume2}" Height="100" Width="4"/>
-                <Slider Opacity="0.5" Width="20" Margin="-11,4,0,0" Height="100" Value="{Binding Volume2}" Minimum="0" Maximum="100" Orientation="Vertical"  />
-                <TextBlock Text="{Binding Volume2}" Opacity="{Binding Volume2}" Foreground="White" />
-            </StackPanel>
-            <StackPanel Margin="20,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Orientation="Horizontal" >
-                <ProgressBar Margin="0,0,0,0" Minimum="0" Orientation="Vertical" Maximum="100" Value="{Binding Volume3}" Height="100" Width="4"/>
-                <Slider Opacity="0.5" Width="20" Margin="-11,4,0,0" Height="100" Value="{Binding Volume3}" Minimum="0" Maximum="100" Orientation="Vertical"  />
-                <TextBlock Text="{Binding Volume3}" Opacity="{Binding Volume3}" Foreground="White" />
-            </StackPanel>
-            <StackPanel Margin="20,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Orientation="Horizontal" >
-                <ProgressBar Margin="0,0,0,0" Minimum="0" Orientation="Vertical" Maximum="100" Value="{Binding Volume4}" Height="100" Width="4"/>
-                <Slider Opacity="0.5" Width="20" Margin="-11,4,0,0" Height="100" Value="{Binding Volume4}" Minimum="0" Maximum="100" Orientation="Vertical"  />
-                <TextBlock Text="{Binding Volume4}" Opacity="{Binding Volume4}" Foreground="White" />
-            </StackPanel>
+         </StackPanel>
         </StackPanel>
     </Grid>
 </Window>
