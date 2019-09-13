@@ -30,7 +30,7 @@ namespace tutorial_mvc
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //simplesound.Play();
+          
         }
     }
 }

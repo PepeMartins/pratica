@@ -8,18 +8,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Window.DataContext>
-        <vm:MainWindowViewModel/>
+        <vm:MainWindowViewModel x:Name="vm"/>
     </Window.DataContext>
     <Grid Background="Black" >
         <StackPanel Orientation="Horizontal">
-            <MediaElement Volume="{Binding Volume1}" Source="{Binding Source1}"></MediaElement>
             <StackPanel Background="#33808080" VerticalAlignment="Bottom">
-                <Button Content="Play"></Button>
+                <Button Content="Play" Click="Button_Click" Command="{Binding PlayCommand}" ></Button>
                 <Button Content="" Width="20" Height="200" Background="#7F527A4A"></Button>
                 <StackPanel Margin="20,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Orientation="Horizontal" >
-                <ProgressBar Margin="0,0,0,0" Minimum="0" Orientation="Vertical" Maximum="100" Value="{Binding Volume1}" Height="100" Width="4"/>
-                <Slider Opacity="0.5" Width="20" Margin="-11,4,0,0" Height="100" Value="{Binding Volume1}" Minimum="0" Maximum="100" Orientation="Vertical"  />
-                <TextBlock Text="{Binding Volume1}" Opacity="{Binding Volume1}" Foreground="White" />
+                <ProgressBar Margin="0,0,0,0" Minimum="0" Orientation="Vertical" Maximum="100" Value="{Binding Volume}" Height="100" Width="4"/>
+                <Slider Opacity="0.5" Width="20" Margin="-11,4,0,0" Height="100" Value="{Binding Volume}" Minimum="0" Maximum="100" Orientation="Vertical"  />
+                <TextBlock Text="{Binding Volume}" Opacity="{Binding Volume}" Foreground="White" />
             </StackPanel>
          </StackPanel>
         </StackPanel>

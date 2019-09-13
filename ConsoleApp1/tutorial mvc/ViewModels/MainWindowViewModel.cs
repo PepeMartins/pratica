@@ -3,44 +3,65 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Media;
 using DevExpress.Mvvm;
+using System.Threading;
 
 namespace tutorial_mvc.ViewModels
 {
     public class MainWindowViewModel : BindableBase
     {
-        public int Volume1
+        private bool IsPlaying = false;
+
+        public SoundPlayer Sound
         {
-            get { return GetValue<int>(nameof(Volume1)); }
-            set { SetValue(value, nameof(Volume1)); }
+            get { return GetValue<SoundPlayer>(nameof(Sound)); }
+            set { SetValue(value, nameof(Sound)); }
+        }
+        public int Volume
+        {
+            get { return GetValue<int>(nameof(Volume)); }
+            set { SetValue(value, nameof(Volume)); }
         }
 
-        public string Source1
+        public string Source
         {
-            get { return GetValue<string>(nameof(Source1)); }
-            set { SetValue(value, nameof(Source1)); }
+            get { return GetValue<string>(nameof(Source)); }
+            set { SetValue(value, nameof(Source)); }
         }
 
-        public int Volume2
+        public DelegateCommand PlayCommand
         {
-            get { return GetValue<int>(nameof(Volume2)); }
-            set { SetValue(value, nameof(Volume2)); }
-        }
-        public int Volume3
-        {
-            get { return GetValue<int>(nameof(Volume3)); }
-            set { SetValue(value, nameof(Volume3)); }
-        }
-        public int Volume4
-        {
-            get { return GetValue<int>(nameof(Volume4)); }
-            set { SetValue(value, nameof(Volume4)); }
+            get; private set;
         }
 
         public MainWindowViewModel()
         {
-            Volume1 = 50;
-            Source1 = @"C:\Pp\Internet Money\nick mira\Nick Mira Bodega Drum Kit\Snares & Claps\NM - Blocc (Clap).wav";
+            Volume = 50;
+            Source = @"C:\Pp\Internet Money\nick mira\Nick Mira Bodega Drum Kit\Snares & Claps\NM - Blocc (Clap).wav";
+            Sound = new SoundPlayer(Source);
+
+            PlayCommand = new DelegateCommand(
+                () =>
+                {
+                    IsPlaying = IsPlaying ? false : true;
+                    if (IsPlaying)
+                    {
+                        var th = new Thread(new ThreadStart(Loop));
+                        th.Start();
+                    }
+                });
+        }
+
+        private void Loop()
+        {
+            while (IsPlaying)
+            {
+                Sound.Play();
+                Console.WriteLine("Play 1");
+                Thread.Sleep(500);
+            }
+            Sound.Stop();
         }
 
     }
