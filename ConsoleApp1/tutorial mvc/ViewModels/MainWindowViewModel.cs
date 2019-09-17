@@ -11,7 +11,11 @@ namespace tutorial_mvc.ViewModels
 {
     public class MainWindowViewModel : BindableBase
     {
-        private bool IsPlaying = false;
+        public bool IsPlaying
+        {
+            get { return GetValue<bool>(nameof(IsPlaying)); }
+            set { SetValue(value, nameof(IsPlaying)); }
+        }
 
         public SoundPlayer Sound
         {
@@ -23,6 +27,19 @@ namespace tutorial_mvc.ViewModels
             get { return GetValue<int>(nameof(Volume)); }
             set { SetValue(value, nameof(Volume)); }
         }
+
+        public float LineX
+        {
+            get { return GetValue<float>(nameof(LineX)); }
+            set { SetValue(value, nameof(LineX)); }
+        }
+
+        public string BtPlayText
+        {
+            get { return GetValue<string>(nameof(BtPlayText)); }
+            set { SetValue(value, nameof(BtPlayText)); }
+        }
+
 
         public string Source
         {
@@ -37,6 +54,7 @@ namespace tutorial_mvc.ViewModels
 
         public MainWindowViewModel()
         {
+            BtPlayText = "Play";
             Volume = 50;
             Source = @"C:\Pp\Internet Money\nick mira\Nick Mira Bodega Drum Kit\Snares & Claps\NM - Blocc (Clap).wav";
             Sound = new SoundPlayer(Source);
@@ -45,23 +63,27 @@ namespace tutorial_mvc.ViewModels
                 () =>
                 {
                     IsPlaying = IsPlaying ? false : true;
-                    if (IsPlaying)
-                    {
-                        var th = new Thread(new ThreadStart(Loop));
-                        th.Start();
-                    }
                 });
+            Loop().GetAwaiter();
         }
 
-        private void Loop()
+        private Task Loop()
         {
-            while (IsPlaying)
+            return Task.Factory.StartNew(() =>
             {
-                Sound.Play();
-                Console.WriteLine("Play 1");
-                Thread.Sleep(500);
-            }
-            Sound.Stop();
+                while (true)
+                {
+                    if (IsPlaying)
+                    {
+                        LineX += 0.5f;
+                        //Sound.Play();
+                        Console.WriteLine("Play 1");
+                        Thread.Sleep(60);
+                    }
+                    BtPlayText = IsPlaying ? "Stop" : "Play";
+                }
+
+            });
         }
 
     }
