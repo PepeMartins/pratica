@@ -11,23 +11,40 @@
         <vm:MainWindowViewModel x:Name="vm"/>
     </Window.DataContext>
     <Grid Background="Black" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="139*"/>
+            <ColumnDefinition Width="653*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
         </Grid.RowDefinitions>
-       <StackPanel Grid.Row="1" Orientation="Horizontal">
-            <StackPanel Background="#33808080" VerticalAlignment="Top">
-                <Button Content="{Binding BtPlayText}" Command="{Binding PlayCommand}" ></Button>
-                <StackPanel Margin="20,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Orientation="Horizontal" >
-                <ProgressBar Margin="0,0,0,0" Minimum="0" Orientation="Vertical" Maximum="100" Value="{Binding Volume}" Height="100" Width="4"/>
-                <Slider Opacity="0.5" Width="20" Margin="-11,4,0,0" Height="100" Value="{Binding Volume}" Minimum="0" Maximum="100" Orientation="Vertical"  />
-                <TextBlock Text="{Binding Volume}" Opacity="{Binding Volume}" Foreground="White" />
-            </StackPanel>
-         </StackPanel>
-        </StackPanel>
-        <Canvas Grid.Row="0" Height="100" Background="#FF2B2B2B" >
-            <Line
-                X1="{Binding LineX}" Y1="0"    X2="{Binding LineX}" Y2="100"    Stroke="LightGreen"     StrokeThickness="2"/>
+        <TreeView Grid.RowSpan="3" >
+        </TreeView>
+        <Canvas Grid.Row="0" Height="100" Background="#FF2B2B2B" Margin="0,0,0,0" Grid.Column="1" VerticalAlignment="Stretch" >
+            <Line X1="{Binding LineX}" Y1="0"    X2="{Binding LineX}" Y2="100"    Stroke="LightGreen"     StrokeThickness="2"/>
         </Canvas>
+        <Canvas Grid.Row="1" Height="100" Background="#FF2B2B2B" Margin="0,2,0,0" Grid.Column="1" VerticalAlignment="Stretch" >
+            <Line X1="{Binding LineX}" Y1="0"    X2="{Binding LineX}" Y2="100"    Stroke="LightGreen"     StrokeThickness="2"/>
+        </Canvas>
+        <Canvas Grid.Row="2" Height="100" Background="#FF2B2B2B" Margin="0,4,0,0" Grid.Column="1" VerticalAlignment="Stretch" >
+            <Line X1="{Binding LineX}" Y1="0"    X2="{Binding LineX}" Y2="100"    Stroke="LightGreen"     StrokeThickness="2"/>
+        </Canvas>
+        <Canvas Grid.Row="3" Height="100" Background="#FF2B2B2B" Margin="0,5,0,0" Grid.Column="1" VerticalAlignment="Stretch" >
+            <Line X1="{Binding LineX}" Y1="0"    X2="{Binding LineX}" Y2="100"    Stroke="LightGreen"     StrokeThickness="2"/>
+        </Canvas>
+        <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
+            <StackPanel Background="#33808080" VerticalAlignment="Top">
+                <Button Content="{Binding BtPlayText}" Command="{Binding PlayCommand}" />
+                <StackPanel Margin="20,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Orientation="Horizontal" >
+                    <ProgressBar Margin="0,0,0,0" Minimum="0" Orientation="Vertical" Maximum="100" Value="{Binding Volume}" Height="70" Width="4"/>
+                    <Slider Opacity="0.5" Width="20" Margin="-11,4,0,0" Height="70" Value="{Binding Volume}" Minimum="0" Maximum="100" Orientation="Vertical"  />
+                    <TextBlock Text="{Binding Volume}" Opacity="{Binding Volume}" Foreground="White" />
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
     </Grid>
 </Window>
